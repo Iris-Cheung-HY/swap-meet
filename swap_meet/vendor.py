@@ -48,3 +48,7 @@ class Vendor:
             if self.inventory[0] == friend_swap and \
             other_vendor.inventory[0] == my_swap:
                 return True
+            
+
+
+
