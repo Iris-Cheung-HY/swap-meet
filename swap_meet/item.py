@@ -1,9 +1,11 @@
 import uuid
 
 class Item:
-    def __init__(self, item, id = None)
-        self.item = item
-        self.id = uuid.uuid4()
+    def __init__(self, id = None):
+        self.id = id
+        if id == None:
+            self.id = uuid.uuid4().int
     
-    def grab_item_id(self, item, id):
-        print (f"{item} is  equal id {id}")
+    def get_category(self):
+        return self.__class__.__name__
+        
