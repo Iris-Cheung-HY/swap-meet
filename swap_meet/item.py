@@ -6,6 +6,7 @@ class Item:
         self.condition = float(condition) 
     
     def get_category(self):
+        #return fix class name
         return "Item"
         
     def __str__(self):
